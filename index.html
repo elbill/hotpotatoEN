@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HOT POTATO</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+    @font-face {
+      font-family: 'Adigiana Ultra';
+      src: url('Adigiana Ultra.ttf') format('truetype');
+    }
+    body {
+      font-family: 'Adigiana Ultra', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #4a4a4a;
+    }
+    .container {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      font-family: 'Adigiana Ultra', cursive;
+      font-size: 2.5rem;
+      color: #d9534f;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 2px #fff;
+    }
+    .question {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    .button {
+      background-color: #ff5722;
+      border: none;
+      border-radius: 25px;
+      padding: 15px 25px;
+      font-size: 1.2rem;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+    .button:hover {
+      background-color: #e64a19;
+      transform: scale(1.05);
+    }
+    .gif-container {
+      margin-top: 20px;
+    }
+    @keyframes moveRandomly {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(20px, -20px); }
+      50% { transform: translate(-20px, 20px); }
+      75% { transform: translate(20px, 20px); }
+      100% { transform: translate(-20px, -20px); }
+    }
+    .animate {
+      animation: moveRandomly 1s infinite;
+    }
+    .gif-container img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1><b>HOT POTATO</b></h1>
+  <div id="instructions" class="question">Click the Start button to begin the game.</div>
+  <button id="start" class="button">Start</button>
+  <button id="next" class="button" style="display:none;">Next</button>
+
+  <audio id="music" loop>
+    <source src="music-file.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="scream-sound">
+    <source src="scream.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <div id="gif-container" class="gif-container"></div>
+</div>
+
+<script>
+const questions = [
+  "Would you rather confront a friend about their questionable campaign strategies or support their behavior?",
+  "You convince your friend to report the sexual harassment that happened to them",
+  "Your friend tells you about his intention to do graffiti, you won't participate, and you don't express your opposition",
+  "Would you rather report a group member, who is contributing minimally to a project and won’t listen to the team’s needs, or take on the extra work to maintain harmony?",
+  "Pass the potato to the one who you believe always speaks up against sexist jokes or comments",
+  "Pass the potato to the one who you believe has never participated in vandalism",
+  "Pass the potato to someone who always treats individuals of all races with respect and kindness",
+  "You found online a post about a classmate that call them name, you just got past it",
+  "Would you rather have a difficult conversation with a friend that violated your trust, or avoid confrontation but stop talking to them?",
+  "You distance yourself from a friend of yours that have been accused of sexual harassment",
+  "Would you rather take a leadership role in promoting diversity and anti-discrimination efforts or support those initiatives from the background?",
+  "Would you rather tell your classmate who was robbed that you witnessed the incident, or report the incident to an adult?",
+  "Would you rather live in a city where graffiti is completely banned or in one where every wall is covered in graffiti?",
+  "You take extra work to a group project because a teammate isn’t contributing enough",
+  "Would you rather debate about gender equality with someone who has sexist views or avoid the conversation because they won’t change their mind?",
+  "Pass the potato to a person who you believe understand the challenges teachers face and shows appreciation for their work",
+  "You live in a city that has legalized graffiti",
+  "Would you rather keep a friend's secret, even if it means withholding information that could be important to others, or prioritize transparency at the expense of your friend's trust?",
+  "Would you rather accept an apology from a teacher about disrespectful behavior against students and attempt to move forward, or insist on formal recognition and action against the teacher?",
+  "Pass the potato to the one who you believe always stands up against racist remarks or jokes",
+  "Pass the potato to the one who you think would intervene if they saw someone being treated unfairly because of their race",
+  "Would you rather treat everyone the same or acknowledge race?",
+  "Would you rather report sexist incidents to the school principal or seek to resolve issues through mediation and dialogue?",
+  "Would you rather directly confront a peer who consistently disrespects teachers, or try to influence their behavior positively through example and private conversations?",
+  "Would you rather as a mayor to invest in graffiti cleanup or in policing to prevent graffiti?",
+  "You are honest with your friend about their harmful behavior (they make fun of you as joke)",
+  "Would you rather confront a group of students, which participate in the same math competition as you, about their intention to cheat or report the incident to an adult?",
+  "Would you rather confront a friend who is spreading false information about a candidate or try to be supportive because everyone does this during elections?",
+  "Would you rather make a fund to make accessibility upgrades to your school, or make a proposal for the school to review and maybe accept?",
+  "Would you rather report to the school administration the teacher’s disrespectful behavior, or talk about it to your parents, who then can handle the situation?",
+  "Pass the potato to someone who you believe would have stood up for a teacher if they were being disrespected by other students",
+  "Would you rather talk to your sibling, about taking your money out of your bag, or talk to your parents about the incident?",
+  "Pass the potato to someone who you believe if they would find lost items, they would make every effort to return them to their rightful owner",
+  "Would you rather write an anonymous letter to the school administration detailing a teacher's disrespectful behavior, or organize a group of students to collectively address the issue by reporting it to the school administration?",
+  "Would you rather be honest with a friend about their harmful behavior (they make fun of you as a joke) or remain silent to avoid conflict?"
+];
+
+const startButton = document.getElementById('start');
+const nextButton = document.getElementById('next');
+const music = document.getElementById('music');
+const screamSound = document.getElementById('scream-sound');
+const instructions = document.getElementById('instructions');
+const gifContainer = document.getElementById('gif-container');
+
+function playMusic() {
+  music.play();
+  displayRandomGif();
+  const title = document.querySelector('h1');
+  title.classList.add('animate');
+  setTimeout(() => {
+    music.pause();
+    screamSound.play();
+    gifContainer.innerHTML = "";
+    nextButton.style.display = 'inline-block';
+    instructions.textContent = questions[Math.floor(Math.random() * questions.length)];
+    title.classList.remove('animate');
+  }, Math.random() * 5000 + 5000);
+}
+
+function displayRandomGif() {
+  const randomGif = Math.floor(Math.random() * 10) + 1;
+  gifContainer.innerHTML = `<img src="${randomGif}.gif" alt="Random GIF">`;
+}
+
+startButton.addEventListener('click', () => {
+  startButton.style.display = 'none';
+  instructions.textContent = "Pass the potato while the music plays!";
+  playMusic();
+});
+
+nextButton.addEventListener('click', () => {
+  nextButton.style.display = 'none';
+  instructions.textContent = "Pass the potato while the music plays!";
+  playMusic();
+});
+</script>
+</body>
+</html>
