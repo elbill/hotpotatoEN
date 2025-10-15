@@ -27,11 +27,10 @@ html,body{
 }
 .container{
   min-height:100vh; display:flex; flex-direction:column;
-  background: url('/assets/background.jpg') center/cover no-repeat fixed;
+  background: url('/assets/background.jpg') center/cover no-repeat;
 }
 .overlay{
-  backdrop-filter: blur(2px);
-  background: rgba(0,0,0,0.45);
+  background: rgba(0,0,0,0.38);
   min-height:100vh; padding: clamp(12px, 3vw, 36px);
 }
 header h1{
