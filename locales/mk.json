@@ -1,0 +1,129 @@
+{
+  "ui": {
+    "tagline": "Inclusive, multilingual classroom game about integrity.",
+    "languageSelect": "Изберете јазик",
+    "langHint": "Your choice is saved on this device. You can change it later.",
+    "instructionsTitle": "Како се игра",
+    "instructions": [
+      "Sit or stand in a circle. Pass a real object while the music plays.",
+      "When the music stops, the student holding it responds to the prompt on screen.",
+      "You can skip any prompt and you can always say “pass”. Be respectful listeners."
+    ],
+    "start": "Старт",
+    "support": "Facilitator Guide",
+    "changeLanguage": "Промени јазик",
+    "safeMode": "Safe Mode (omit sensitive topics)",
+    "playingLabel": "Music playing — pass the potato!",
+    "stop": "Стоп",
+    "mute": "Исклучи/Вклучи звук",
+    "nextRound": "Следен круг",
+    "skip": "Прескокни",
+    "pauseAudio": "Pause Sounds",
+    "supportTitle": "Quick Support Tips",
+    "close": "Close",
+    "footer": "No personal data is collected. Works offline after first load.",
+    "selectLanguageAria": "Select language",
+    "startedAnnounce": "Round started. Music playing.",
+    "pausedAnnounce": "Game paused.",
+    "promptAnnounce": "Prompt displayed.",
+    "categoryLabel": "Category:",
+    "noPrompt": "No prompt available for the current settings."
+  },
+  "categories": {
+    "theft": "Theft",
+    "bullying": "Bullying",
+    "sexual_harassment": "Sexual Harassment",
+    "gender_discrimination": "Gender Discrimination",
+    "plagiarism": "Plagiarism",
+    "exam_cheating": "Exam Cheating",
+    "vandalism": "Vandalism",
+    "racism": "Racism",
+    "socioeconomic_discrimination": "Socioeconomic Discrimination",
+    "school_elections": "School Elections",
+    "student_to_teacher_abuse": "Student-to-Teacher Abuse",
+    "teacher_to_student_abuse": "Teacher-to-Student Abuse"
+  },
+  "prompts": {
+    "theft": [
+      {
+        "type": "future",
+        "text": "You find a wallet in the hallway. A week from now, how might you feel if you keep it vs. turn it in?"
+      },
+      {
+        "type": "would_you_rather",
+        "text": "Would you rather return a lost phone and get no thanks, or keep it and worry someone needs it? Why?"
+      }
+    ],
+    "bullying": [
+      {
+        "type": "future",
+        "text": "You laughed along when a classmate was teased. A year later, how might you think about that moment?"
+      },
+      {
+        "type": "pass_to",
+        "text": "Pass the potato to someone who could help make a new student feel welcome."
+      }
+    ],
+    "plagiarism": [
+      {
+        "type": "would_you_rather",
+        "text": "Would you rather get a lower grade or copy an online project without credit? Why?"
+      }
+    ],
+    "exam_cheating": [
+      {
+        "type": "future",
+        "text": "You cheated and didn’t get caught. How could this affect your learning in the future?"
+      }
+    ],
+    "gender_discrimination": [
+      {
+        "type": "pass_to",
+        "text": "Pass the potato to someone who can share why respecting all genders in class matters."
+      }
+    ],
+    "vandalism": [
+      {
+        "type": "future",
+        "text": "Someone scratched a desk. What are the long-term effects on the school community?"
+      }
+    ],
+    "racism": [
+      {
+        "type": "future",
+        "text": "A class group excludes someone because of their background. What harm can that cause over time?"
+      }
+    ],
+    "socioeconomic_discrimination": [
+      {
+        "type": "would_you_rather",
+        "text": "Would you rather speak up when someone is teased for money issues, or stay quiet? Why?"
+      }
+    ],
+    "school_elections": [
+      {
+        "type": "future",
+        "text": "A candidate promises free gifts for votes. What might happen after the election?"
+      }
+    ],
+    "student_to_teacher_abuse": [
+      {
+        "type": "future",
+        "text": "Rumors spread about a teacher online. What could be better ways to raise concerns?"
+      }
+    ],
+    "teacher_to_student_abuse": [
+      {
+        "type": "future",
+        "text": "A teacher shows clear favoritism. What could a student do to seek fair treatment?"
+      }
+    ],
+    "sexual_harassment": [
+      {
+        "type": "future",
+        "text": "Someone keeps touching your shoulder after you said stop. What safe steps could you take next?"
+      }
+    ]
+  },
+  "support": []
+}

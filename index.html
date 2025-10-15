@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hot Potato — Ethics Game</title>
+  <meta name="theme-color" content="#ff6a00" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="overlay">
+      <header>
+        <h1 aria-live="polite">🔥 Hot Potato: Ethics Edition</h1>
+        <div class="tagline" id="tagline"></div>
+      </header>
+
+      <!-- Language selector -->
+      <section id="langScreen" class="card" aria-labelledby="languageSelectLabel">
+        <h2 id="languageSelectLabel"></h2>
+        <div class="lang-grid" id="langGrid"></div>
+        <p class="small" id="langHint"></p>
+      </section>
+
+      <!-- Instructions -->
+      <section id="introScreen" class="card" style="display:none">
+        <h2 id="instructionsTitle"></h2>
+        <div id="instructionsList"></div>
+        <div class="settings">
+          <label><input type="checkbox" id="safeMode" /> <span id="safeModeLabel"></span></label>
+          <div class="category-list" id="categoryList"></div>
+        </div>
+        <div class="controls">
+          <button id="startBtn"></button>
+          <button class="secondary" id="helpBtn"></button>
+          <button class="ghost" id="changeLangBtn"></button>
+        </div>
+        <div class="state-indicator" id="audioState"></div>
+      </section>
+
+      <!-- Playing state -->
+      <section id="playingScreen" class="card" style="display:none">
+        <div class="badge"><span id="playingLabel"></span></div>
+        <div class="controls">
+          <button id="stopBtn"></button>
+          <button class="secondary" id="muteBtn"></button>
+        </div>
+        <div id="playingViz" aria-live="polite">
+          <img id="loopGif" alt="Animated passing visual" />
+        </div>
+      </section>
+
+      <!-- Prompt -->
+      <section id="promptScreen" class="card" aria-live="assertive">
+        <img id="boomGif" class="gif-lg" alt="Funny reaction animation" />
+        <div class="prompt-box">
+          <div id="promptCategory"></div>
+          <p id="promptText" class="prompt-text"></p>
+        </div>
+        <div class="controls">
+          <button id="nextBtn"></button>
+          <button class="secondary" id="skipBtn"></button>
+          <button class="ghost" id="pauseAudioBtn"></button>
+        </div>
+      </section>
+
+      <!-- Support modal (very lightweight implementation) -->
+      <section id="supportModal" class="card" style="display:none">
+        <h3 id="supportTitle"></h3>
+        <ul id="supportList"></ul>
+        <div class="controls">
+          <button id="closeSupport"></button>
+        </div>
+      </section>
+
+      <footer>
+        <div id="footerNote"></div>
+      </footer>
+
+      <!-- Audio elements -->
+      <audio id="bgMusic" preload="auto" loop src="/assets/music-file.mp3"></audio>
+      <audio id="sfxScream" preload="auto" src="/assets/scream.mp3"></audio>
+
+      <div id="liveRegion" class="sr-only" aria-live="assertive"></div>
+    </div>
+  </div>
+  <script src="/main.js" defer></script>
+</body>
+</html>

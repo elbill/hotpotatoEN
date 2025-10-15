@@ -1,0 +1,9 @@
+{
+  "name": "Hot Potato: Ethics Game",
+  "short_name": "Hot Potato",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0b0b0f",
+  "theme_color": "#ff6a00",
+  "icons": []
+}
