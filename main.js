@@ -156,7 +156,11 @@ function renderLanguageGrid(){
   languages.forEach(({code,name}) => {
     const btn = document.createElement('button');
     btn.className = 'lang-item';
+    btn.type = 'button';
     btn.setAttribute('aria-label', t('ui.selectLanguageAria', 'Select language') + ' ' + name);
+    const isActive = state.lang === code;
+    btn.classList.toggle('current', isActive);
+    btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     btn.textContent = name;
     btn.addEventListener('click', async ()=>{
       state.lang = code;
