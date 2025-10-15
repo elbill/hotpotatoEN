@@ -10,7 +10,6 @@
       "You can skip any prompt and you can always say “pass”. Be respectful listeners."
     ],
     "start": "Старт",
-    "support": "Facilitator Guide",
     "changeLanguage": "Смяна на език",
     "safeMode": "Safe Mode (omit sensitive topics)",
     "playingLabel": "Music playing — pass the potato!",
@@ -19,8 +18,6 @@
     "nextRound": "Следващ рунд",
     "skip": "Пропусни",
     "pauseAudio": "Pause Sounds",
-    "supportTitle": "Quick Support Tips",
-    "close": "Close",
     "footer": "No personal data is collected. Works offline after first load.",
     "selectLanguageAria": "Select language",
     "startedAnnounce": "Round started. Music playing.",
@@ -124,6 +121,5 @@
         "text": "Someone keeps touching your shoulder after you said stop. What safe steps could you take next?"
       }
     ]
-  },
-  "support": []
+  }
 }

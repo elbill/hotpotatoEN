@@ -73,7 +73,6 @@ async function init(){
   $('#langHint').textContent = t('ui.langHint');
   $('#instructionsTitle').textContent = t('ui.instructionsTitle');
   $('#startBtn').textContent = t('ui.start');
-  $('#helpBtn').textContent = t('ui.support');
   $('#changeLangBtn').textContent = t('ui.changeLanguage');
   $('#safeModeLabel').textContent = t('ui.safeMode');
   $('#playingLabel').textContent = t('ui.playingLabel');
@@ -82,8 +81,6 @@ async function init(){
   $('#nextBtn').textContent = t('ui.nextRound');
   $('#skipBtn').textContent = t('ui.skip');
   $('#pauseAudioBtn').textContent = t('ui.pauseAudio');
-  $('#supportTitle').textContent = t('ui.supportTitle');
-  $('#closeSupport').textContent = t('ui.close');
   $('#footerNote').textContent = t('ui.footer');
 
   renderLanguageGrid();
@@ -105,8 +102,6 @@ async function init(){
   $('#skipBtn').addEventListener('click', skipPrompt);
   $('#pauseAudioBtn').addEventListener('click', pauseAllAudio);
   $('#changeLangBtn').addEventListener('click', ()=>setPhase('lang'));
-  $('#helpBtn').addEventListener('click', ()=>$('#supportModal').style.display='block');
-  $('#closeSupport').addEventListener('click', ()=>$('#supportModal').style.display='none');
 
   // Safe mode toggle
   $('#safeMode').addEventListener('change', (e)=>{
@@ -136,7 +131,6 @@ function setPhase(phase){
   $('#introScreen').style.display = phase === 'intro' ? 'block' : 'none';
   $('#playingScreen').style.display = phase === 'playing' ? 'block' : 'none';
   $('#promptScreen').style.display = phase === 'prompt' ? 'block' : 'none';
-  $('#supportModal').style.display = 'none';
   if(phase === 'lang'){
     renderLanguageGrid();
   }
