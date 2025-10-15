@@ -30,98 +30,98 @@
     "noPrompt": "Δεν υπάρχουν ερωτήσεις με τις τρέχουσες ρυθμίσεις."
   },
   "categories": {
-    "theft": "Theft",
-    "bullying": "Bullying",
-    "sexual_harassment": "Sexual Harassment",
-    "gender_discrimination": "Gender Discrimination",
-    "plagiarism": "Plagiarism",
-    "exam_cheating": "Exam Cheating",
-    "vandalism": "Vandalism",
-    "racism": "Racism",
-    "socioeconomic_discrimination": "Socioeconomic Discrimination",
-    "school_elections": "School Elections",
-    "student_to_teacher_abuse": "Student-to-Teacher Abuse",
-    "teacher_to_student_abuse": "Teacher-to-Student Abuse"
+    "theft": "Κλοπή",
+    "bullying": "Εκφοβισμός",
+    "sexual_harassment": "Σεξουαλική παρενόχληση",
+    "gender_discrimination": "Διάκριση λόγω φύλου",
+    "plagiarism": "Λογοκλοπή",
+    "exam_cheating": "Αντιγραφή σε διαγώνισμα",
+    "vandalism": "Βανδαλισμός",
+    "racism": "Ρατσισμός",
+    "socioeconomic_discrimination": "Κοινωνικοοικονομικές διακρίσεις",
+    "school_elections": "Μαθητικές εκλογές",
+    "student_to_teacher_abuse": "Κακοποίηση μαθητή προς εκπαιδευτικό",
+    "teacher_to_student_abuse": "Κακοποίηση εκπαιδευτικού προς μαθητή"
   },
   "prompts": {
     "theft": [
       {
         "type": "future",
-        "text": "You find a wallet in the hallway. A week from now, how might you feel if you keep it vs. turn it in?"
+        "text": "Βρίσκεις ένα πορτοφόλι στο διάδρομο. Σε μια εβδομάδα, πώς θα ένιωθες αν το κρατούσες αντί να το παραδώσεις;"
       },
       {
         "type": "would_you_rather",
-        "text": "Would you rather return a lost phone and get no thanks, or keep it and worry someone needs it? Why?"
+        "text": "Θα προτιμούσες να επιστρέψεις ένα χαμένο τηλέφωνο χωρίς να σε ευχαριστήσουν, ή να το κρατήσεις και να ανησυχείς ότι κάποιος το χρειάζεται; Γιατί;"
       }
     ],
     "bullying": [
       {
         "type": "future",
-        "text": "You laughed along when a classmate was teased. A year later, how might you think about that moment?"
+        "text": "Γέλασες όταν κορόιδευαν έναν συμμαθητή. Έναν χρόνο μετά, πώς θα σκεφτόσουν εκείνη τη στιγμή;"
       },
       {
         "type": "pass_to",
-        "text": "Pass the potato to someone who could help make a new student feel welcome."
+        "text": "Δώσε το αντικείμενο σε κάποιον που μπορεί να βοηθήσει έναν νέο μαθητή να αισθανθεί ευπρόσδεκτος."
       }
     ],
     "plagiarism": [
       {
         "type": "would_you_rather",
-        "text": "Would you rather get a lower grade or copy an online project without credit? Why?"
+        "text": "Θα προτιμούσες να πάρεις χαμηλότερο βαθμό ή να αντιγράψεις ένα διαδικτυακό project χωρίς αναφορά; Γιατί;"
       }
     ],
     "exam_cheating": [
       {
         "type": "future",
-        "text": "You cheated and didn’t get caught. How could this affect your learning in the future?"
+        "text": "Έκανες σκονάκι και δεν σε έπιασαν. Πώς μπορεί αυτό να επηρεάσει τη μάθησή σου στο μέλλον;"
       }
     ],
     "gender_discrimination": [
       {
         "type": "pass_to",
-        "text": "Pass the potato to someone who can share why respecting all genders in class matters."
+        "text": "Δώσε το αντικείμενο σε κάποιον που μπορεί να εξηγήσει γιατί είναι σημαντικό να σεβόμαστε όλα τα φύλα στην τάξη."
       }
     ],
     "vandalism": [
       {
         "type": "future",
-        "text": "Someone scratched a desk. What are the long-term effects on the school community?"
+        "text": "Κάποιος χάραξε ένα θρανίο. Ποιες είναι οι μακροπρόθεσμες συνέπειες για τη σχολική κοινότητα;"
       }
     ],
     "racism": [
       {
         "type": "future",
-        "text": "A class group excludes someone because of their background. What harm can that cause over time?"
+        "text": "Μια ομάδα στην τάξη αποκλείει κάποιον λόγω της καταγωγής του. Τι ζημιά μπορεί να προκαλέσει αυτό με τον χρόνο;"
       }
     ],
     "socioeconomic_discrimination": [
       {
         "type": "would_you_rather",
-        "text": "Would you rather speak up when someone is teased for money issues, or stay quiet? Why?"
+        "text": "Θα προτιμούσες να μιλήσεις όταν κοροϊδεύουν κάποιον για οικονομικά θέματα, ή να σιωπήσεις; Γιατί;"
       }
     ],
     "school_elections": [
       {
         "type": "future",
-        "text": "A candidate promises free gifts for votes. What might happen after the election?"
+        "text": "Ένας υποψήφιος υπόσχεται δωρεάν δώρα για ψήφους. Τι μπορεί να συμβεί μετά τις εκλογές;"
       }
     ],
     "student_to_teacher_abuse": [
       {
         "type": "future",
-        "text": "Rumors spread about a teacher online. What could be better ways to raise concerns?"
+        "text": "Κυκλοφορούν φήμες στο διαδίκτυο για έναν εκπαιδευτικό. Ποιοι θα μπορούσαν να είναι καλύτεροι τρόποι να εκφράσετε ανησυχίες;"
       }
     ],
     "teacher_to_student_abuse": [
       {
         "type": "future",
-        "text": "A teacher shows clear favoritism. What could a student do to seek fair treatment?"
+        "text": "Ένας εκπαιδευτικός δείχνει ξεκάθαρη εύνοια. Τι μπορεί να κάνει ένας μαθητής για να ζητήσει δίκαιη μεταχείριση;"
       }
     ],
     "sexual_harassment": [
       {
         "type": "future",
-        "text": "Someone keeps touching your shoulder after you said stop. What safe steps could you take next?"
+        "text": "Κάποιος συνεχίζει να σου πιάνει τον ώμο αφού είπες να σταματήσει. Ποια ασφαλή βήματα μπορείς να κάνεις στη συνέχεια;"
       }
     ]
   },

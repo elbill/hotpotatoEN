@@ -1,127 +1,127 @@
 {
   "ui": {
-    "tagline": "Inclusive, multilingual classroom game about integrity.",
+    "tagline": "Инклузивна, повеќејазична училишна игра за чесност.",
     "languageSelect": "Изберете јазик",
-    "langHint": "Your choice is saved on this device. You can change it later.",
+    "langHint": "Вашиот избор се зачувува на овој уред. Можете да го смените подоцна.",
     "instructionsTitle": "Како се игра",
     "instructions": [
-      "Sit or stand in a circle. Pass a real object while the music plays.",
-      "When the music stops, the student holding it responds to the prompt on screen.",
-      "You can skip any prompt and you can always say “pass”. Be respectful listeners."
+      "Седнете или застанете во круг. Предавајте вистински предмет додека свири музика.",
+      "Кога музиката ќе запре, оној што го држи одговара на прашањето на екранот.",
+      "Можете да прескокнете кое било прашање и секогаш можете да кажете „пас“. Слушајте со почит."
     ],
     "start": "Старт",
-    "support": "Facilitator Guide",
+    "support": "Водич за фасилитатор",
     "changeLanguage": "Промени јазик",
-    "safeMode": "Safe Mode (omit sensitive topics)",
-    "playingLabel": "Music playing — pass the potato!",
+    "safeMode": "Безбеден режим (без чувствителни теми)",
+    "playingLabel": "Свират музика — предавајте го компирот!",
     "stop": "Стоп",
     "mute": "Исклучи/Вклучи звук",
     "nextRound": "Следен круг",
     "skip": "Прескокни",
-    "pauseAudio": "Pause Sounds",
-    "supportTitle": "Quick Support Tips",
-    "close": "Close",
-    "footer": "No personal data is collected. Works offline after first load.",
-    "selectLanguageAria": "Select language",
-    "startedAnnounce": "Round started. Music playing.",
-    "pausedAnnounce": "Game paused.",
-    "promptAnnounce": "Prompt displayed.",
-    "categoryLabel": "Category:",
-    "noPrompt": "No prompt available for the current settings."
+    "pauseAudio": "Паузирај звуците",
+    "supportTitle": "Брзи совети за поддршка",
+    "close": "Затвори",
+    "footer": "Не се собираат лични податоци. Работи офлајн по првото вчитување.",
+    "selectLanguageAria": "Изберете јазик",
+    "startedAnnounce": "Почна рундот. Свират музика.",
+    "pausedAnnounce": "Играта е паузирана.",
+    "promptAnnounce": "Прашањето е прикажано.",
+    "categoryLabel": "Категорија:",
+    "noPrompt": "Нема прашање за тековните поставки."
   },
   "categories": {
-    "theft": "Theft",
-    "bullying": "Bullying",
-    "sexual_harassment": "Sexual Harassment",
-    "gender_discrimination": "Gender Discrimination",
-    "plagiarism": "Plagiarism",
-    "exam_cheating": "Exam Cheating",
-    "vandalism": "Vandalism",
-    "racism": "Racism",
-    "socioeconomic_discrimination": "Socioeconomic Discrimination",
-    "school_elections": "School Elections",
-    "student_to_teacher_abuse": "Student-to-Teacher Abuse",
-    "teacher_to_student_abuse": "Teacher-to-Student Abuse"
+    "theft": "Кражба",
+    "bullying": "Малтретирање",
+    "sexual_harassment": "Сексуално вознемирување",
+    "gender_discrimination": "Дискриминација по пол",
+    "plagiarism": "Плагијат",
+    "exam_cheating": "Препишување на испит",
+    "vandalism": "Вандализам",
+    "racism": "Расизам",
+    "socioeconomic_discrimination": "Социоекономска дискриминација",
+    "school_elections": "Училишни избори",
+    "student_to_teacher_abuse": "Злоупотреба од ученик кон наставник",
+    "teacher_to_student_abuse": "Злоупотреба од наставник кон ученик"
   },
   "prompts": {
     "theft": [
       {
         "type": "future",
-        "text": "You find a wallet in the hallway. A week from now, how might you feel if you keep it vs. turn it in?"
+        "text": "Наоѓате паричник во ходникот. По една недела, како би се чувствувале ако го задржите наместо да го предадете?"
       },
       {
         "type": "would_you_rather",
-        "text": "Would you rather return a lost phone and get no thanks, or keep it and worry someone needs it? Why?"
+        "text": "Дали би претпочитале да вратите изгубен телефон без да добиете благодарност, или да го задржите и да се грижите дека му треба на некого? Зошто?"
       }
     ],
     "bullying": [
       {
         "type": "future",
-        "text": "You laughed along when a classmate was teased. A year later, how might you think about that moment?"
+        "text": "Се смеевте кога се подбиваа со соученик. По една година, како би гледале на тој момент?"
       },
       {
         "type": "pass_to",
-        "text": "Pass the potato to someone who could help make a new student feel welcome."
+        "text": "Предадете го компирот на некого што може да му помогне на нов ученик да се почувствува добредојден."
       }
     ],
     "plagiarism": [
       {
         "type": "would_you_rather",
-        "text": "Would you rather get a lower grade or copy an online project without credit? Why?"
+        "text": "Дали би претпочитале пониска оценка или да копирате онлајн проект без да наведете автор? Зошто?"
       }
     ],
     "exam_cheating": [
       {
         "type": "future",
-        "text": "You cheated and didn’t get caught. How could this affect your learning in the future?"
+        "text": "Препишувавте и не ве фатија. Како тоа може да влијае на вашето учење во иднина?"
       }
     ],
     "gender_discrimination": [
       {
         "type": "pass_to",
-        "text": "Pass the potato to someone who can share why respecting all genders in class matters."
+        "text": "Предадете го компирот на некого што може да сподели зошто е важно во класот да се почитуваат сите родови."
       }
     ],
     "vandalism": [
       {
         "type": "future",
-        "text": "Someone scratched a desk. What are the long-term effects on the school community?"
+        "text": "Некој изгребал клупа. Какви долгорочни последици може да има тоа за училишната заедница?"
       }
     ],
     "racism": [
       {
         "type": "future",
-        "text": "A class group excludes someone because of their background. What harm can that cause over time?"
+        "text": "Група од класот исклучува некого поради неговото потекло. Каква штета може да предизвика тоа со текот на времето?"
       }
     ],
     "socioeconomic_discrimination": [
       {
         "type": "would_you_rather",
-        "text": "Would you rather speak up when someone is teased for money issues, or stay quiet? Why?"
+          "text": "Дали би претпочитале да се застапите кога некого го исмеваат поради финансиски тешкотии, или да молчите? Зошто?"
       }
     ],
     "school_elections": [
       {
         "type": "future",
-        "text": "A candidate promises free gifts for votes. What might happen after the election?"
+        "text": "Кандидат ветува бесплатни подароци за гласови. Што може да се случи по изборите?"
       }
     ],
     "student_to_teacher_abuse": [
       {
         "type": "future",
-        "text": "Rumors spread about a teacher online. What could be better ways to raise concerns?"
+        "text": "Онлајн се шират гласини за наставник. Кои би биле подобри начини да се изразат загрижености?"
       }
     ],
     "teacher_to_student_abuse": [
       {
         "type": "future",
-        "text": "A teacher shows clear favoritism. What could a student do to seek fair treatment?"
+        "text": "Наставник покажува очигледна фаворизација. Што може да направи ученик за да побара правична постапка?"
       }
     ],
     "sexual_harassment": [
       {
         "type": "future",
-        "text": "Someone keeps touching your shoulder after you said stop. What safe steps could you take next?"
+        "text": "Некој постојано ви го допира рамото откако рековте да престане. Кои безбедни чекори можете да ги преземете понатаму?"
       }
     ]
   },

@@ -1,127 +1,127 @@
 {
   "ui": {
-    "tagline": "Inclusive, multilingual classroom game about integrity.",
+    "tagline": "Lojë gjithëpërfshirëse, shumëgjuhëshe për integritetin në klasë.",
     "languageSelect": "Zgjidhni gjuhën",
-    "langHint": "Your choice is saved on this device. You can change it later.",
+    "langHint": "Zgjedhja ruhet në këtë pajisje. Mund ta ndryshoni më vonë.",
     "instructionsTitle": "Si luhet",
     "instructions": [
-      "Sit or stand in a circle. Pass a real object while the music plays.",
-      "When the music stops, the student holding it responds to the prompt on screen.",
-      "You can skip any prompt and you can always say “pass”. Be respectful listeners."
+      "Uluni ose qëndroni në rreth. Kaloni një objekt të vërtetë ndërsa luan muzika.",
+      "Kur muzika ndalon, nxënësi që e mban përgjigjet pyetjes në ekran.",
+      "Mund të anashkaloni çdo pyetje dhe gjithmonë mund të thoni “kaloj”. Dëgjoni me respekt."
     ],
     "start": "Fillo lojën",
-    "support": "Facilitator Guide",
+    "support": "Udhëzues për facilitatorin",
     "changeLanguage": "Ndrysho gjuhën",
-    "safeMode": "Safe Mode (omit sensitive topics)",
-    "playingLabel": "Music playing — pass the potato!",
+    "safeMode": "Mënyra e sigurt (pa tema të ndjeshme)",
+    "playingLabel": "Muzika po luan — kaloni pataten!",
     "stop": "Ndalo",
     "mute": "Fik/ndiz zërin",
     "nextRound": "Raundi tjetër",
     "skip": "Kalo pyetjen",
-    "pauseAudio": "Pause Sounds",
-    "supportTitle": "Quick Support Tips",
-    "close": "Close",
-    "footer": "No personal data is collected. Works offline after first load.",
-    "selectLanguageAria": "Select language",
-    "startedAnnounce": "Round started. Music playing.",
-    "pausedAnnounce": "Game paused.",
-    "promptAnnounce": "Prompt displayed.",
-    "categoryLabel": "Category:",
-    "noPrompt": "No prompt available for the current settings."
+    "pauseAudio": "Pauzo tingujt",
+    "supportTitle": "Këshilla të shpejta mbështetëse",
+    "close": "Mbyll",
+    "footer": "Nuk mblidhen të dhëna personale. Punon offline pas ngarkimit të parë.",
+    "selectLanguageAria": "Zgjidhni gjuhën",
+    "startedAnnounce": "Raundi filloi. Muzika po luan.",
+    "pausedAnnounce": "Lojë në pauzë.",
+    "promptAnnounce": "Pyetja u shfaq.",
+    "categoryLabel": "Kategori:",
+    "noPrompt": "Nuk ka pyetje për cilësimet aktuale."
   },
   "categories": {
-    "theft": "Theft",
-    "bullying": "Bullying",
-    "sexual_harassment": "Sexual Harassment",
-    "gender_discrimination": "Gender Discrimination",
-    "plagiarism": "Plagiarism",
-    "exam_cheating": "Exam Cheating",
-    "vandalism": "Vandalism",
-    "racism": "Racism",
-    "socioeconomic_discrimination": "Socioeconomic Discrimination",
-    "school_elections": "School Elections",
-    "student_to_teacher_abuse": "Student-to-Teacher Abuse",
-    "teacher_to_student_abuse": "Teacher-to-Student Abuse"
+    "theft": "Vjedhje",
+    "bullying": "Ngacmim",
+    "sexual_harassment": "Ngacmim seksual",
+    "gender_discrimination": "Diskriminim gjinor",
+    "plagiarism": "Plagjiaturë",
+    "exam_cheating": "Mashtrim në provim",
+    "vandalism": "Vandalizëm",
+    "racism": "Racizëm",
+    "socioeconomic_discrimination": "Diskriminim socioekonomik",
+    "school_elections": "Zgjedhje shkollore",
+    "student_to_teacher_abuse": "Abuzim nga nxënësi ndaj mësuesit",
+    "teacher_to_student_abuse": "Abuzim nga mësuesi ndaj nxënësit"
   },
   "prompts": {
     "theft": [
       {
         "type": "future",
-        "text": "You find a wallet in the hallway. A week from now, how might you feel if you keep it vs. turn it in?"
+        "text": "Gjen një portofol në korridor. Pas një jave, si mund të ndihesh nëse e mbash në vend që ta dorëzosh?"
       },
       {
         "type": "would_you_rather",
-        "text": "Would you rather return a lost phone and get no thanks, or keep it and worry someone needs it? Why?"
+        "text": "Do të preferoje të ktheje një telefon të humbur pa marrë falënderime, apo ta mbaje dhe të shqetësohesh se dikujt i duhet? Pse?"
       }
     ],
     "bullying": [
       {
         "type": "future",
-        "text": "You laughed along when a classmate was teased. A year later, how might you think about that moment?"
+        "text": "Qeshe kur tallnin një shok klase. Pas një viti, si do ta shihje atë moment?"
       },
       {
         "type": "pass_to",
-        "text": "Pass the potato to someone who could help make a new student feel welcome."
+        "text": "Kaloje pataten dikujt që mund ta ndihmojë një nxënës të ri të ndihet i mirëpritur."
       }
     ],
     "plagiarism": [
       {
         "type": "would_you_rather",
-        "text": "Would you rather get a lower grade or copy an online project without credit? Why?"
+        "text": "Do të preferoje një notë më të ulët apo të kopjosh një projekt online pa dhënë meritën? Pse?"
       }
     ],
     "exam_cheating": [
       {
         "type": "future",
-        "text": "You cheated and didn’t get caught. How could this affect your learning in the future?"
+        "text": "Mashtrove në provim dhe nuk të kapën. Si mund të ndikojë kjo në të nxënit tënd në të ardhmen?"
       }
     ],
     "gender_discrimination": [
       {
         "type": "pass_to",
-        "text": "Pass the potato to someone who can share why respecting all genders in class matters."
+        "text": "Kaloje pataten dikujt që mund të shpjegojë pse është e rëndësishme të respektohen të gjitha gjinitë në klasë."
       }
     ],
     "vandalism": [
       {
         "type": "future",
-        "text": "Someone scratched a desk. What are the long-term effects on the school community?"
+        "text": "Dikush gërvisht një bankë. Cilat janë pasojat afatgjata për komunitetin e shkollës?"
       }
     ],
     "racism": [
       {
         "type": "future",
-        "text": "A class group excludes someone because of their background. What harm can that cause over time?"
+        "text": "Një grup në klasë e përjashton dikë për shkak të origjinës. Çfarë dëmi mund të shkaktojë kjo me kalimin e kohës?"
       }
     ],
     "socioeconomic_discrimination": [
       {
         "type": "would_you_rather",
-        "text": "Would you rather speak up when someone is teased for money issues, or stay quiet? Why?"
+        "text": "Do të preferoje të flisje kur dikush tallet për vështirësitë financiare, apo të heshtje? Pse?"
       }
     ],
     "school_elections": [
       {
         "type": "future",
-        "text": "A candidate promises free gifts for votes. What might happen after the election?"
+        "text": "Një kandidat premton dhurata falas për votat. Çfarë mund të ndodhë pas zgjedhjeve?"
       }
     ],
     "student_to_teacher_abuse": [
       {
         "type": "future",
-        "text": "Rumors spread about a teacher online. What could be better ways to raise concerns?"
+        "text": "Përhapen thashetheme online për një mësues. Cilat do të ishin mënyra më të mira për të shprehur shqetësimet?"
       }
     ],
     "teacher_to_student_abuse": [
       {
         "type": "future",
-        "text": "A teacher shows clear favoritism. What could a student do to seek fair treatment?"
+        "text": "Një mësues tregon hapur të preferuarit. Çfarë mund të bëjë një nxënës për të kërkuar trajtim të drejtë?"
       }
     ],
     "sexual_harassment": [
       {
         "type": "future",
-        "text": "Someone keeps touching your shoulder after you said stop. What safe steps could you take next?"
+        "text": "Dikush vazhdon të të prekë në shpatull pasi i ke thënë të ndalë. Çfarë hapash të sigurt mund të ndërmarrësh më pas?"
       }
     ]
   },
